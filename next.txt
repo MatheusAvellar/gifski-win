@@ -1,0 +1,11 @@
+# Ref
+https://gif.ski/
+https://github.com/ImageOptim/gifski
+https://github.com/sindresorhus/Gifski
+https://blog.sindresorhus.com/gifski-972692460aa5
+https://youtu.be/zZNvlGwCFAs
+https://youtu.be/DiDPI7NSDKw
+
+# Potentially useful links for the future
+https://stackoverflow.com/questions/10957412/fastest-way-to-extract-frames-using-ffmpeg
+https://trac.ffmpeg.org/wiki/Seeking

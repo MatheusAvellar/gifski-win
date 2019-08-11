@@ -1,0 +1,35 @@
+﻿<Window x:Class="gifski_win.ProgressWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Gifski – Converting…"
+        Width="720" Height="480"
+        Background="#FF202020"
+        ScrollViewer.VerticalScrollBarVisibility="Disabled"
+        ResizeMode="CanMinimize" ContentRendered="OnContentRender" Closed="OnProgressWindowClosed">
+  <Window.TaskbarItemInfo>
+    <TaskbarItemInfo/>
+  </Window.TaskbarItemInfo>
+  <Grid>
+    <Grid x:Name="initialStage" Opacity="1">
+      <Label x:Name="progressLabel" Content="0%" Margin="10" FontSize="50" VerticalAlignment="Center" HorizontalAlignment="Center" Foreground="#FF116FCD"/>
+      <Label x:Name="etaLabel" Content="Processing..." Margin="0,270,0,0" FontSize="16" Foreground="#FFA0A0A0" HorizontalAlignment="Center"/>
+      <ProgressBar x:Name="progressBar" HorizontalAlignment="Center" Height="17" Margin="0,150,0,0" VerticalAlignment="Top" Width="140" Foreground="#FF116FCD" BorderBrush="#FF3E3E3E" Background="#FF303030" Value="0"/>
+    </Grid>
+    <Grid x:Name="finalStage" Opacity="0">
+      <Image x:Name="gifPreview" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Width="200" Height="170" MaxHeight="170" ScrollViewer.VerticalScrollBarVisibility="Disabled" MouseLeftButtonDown="OnImageMouseDown">
+        <Image.Effect>
+          <DropShadowEffect Color="#FF222222" BlurRadius="20" Direction="270" ShadowDepth="2"/>
+        </Image.Effect>
+      </Image>
+      <Label x:Name="outputName" Content="file.gif" Margin="0,0,0,200" HorizontalAlignment="Center" Foreground="#FFEEEEEE" VerticalAlignment="Bottom" FontSize="20"/>
+      <Label x:Name="outputSize" Content="0 B" Margin="0,0,0,180" HorizontalAlignment="Center" Foreground="#FFA0A0A0" VerticalAlignment="Bottom" FontSize="14"/>
+      <Button x:Name="btn_copy" Content="Copy" Margin="0,0,120,50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="OnClickCopy"/>
+      <Label x:Name="copyFeedback" Content="Copied!" Opacity="0" Margin="0,0,120,20" HorizontalAlignment="Center" VerticalAlignment="Bottom" Foreground="#FFA0A0A0"/>
+      <Button x:Name="btn_save" Content="Save As..." Margin="120,0,0,50" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="75" Click="OnClickSaveAs"/>
+    </Grid>
+  </Grid>
+</Window>
