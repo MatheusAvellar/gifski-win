@@ -1,12 +1,16 @@
 # Gifski Win
 
-A native Windows GUI making use of [`ffmpeg`](https://ffmpeg.org/)
-([source](https://github.com/FFmpeg/FFmpeg)) and [`gifski`](https://gif.ski/)
-([source](https://github.com/ImageOptim/gifski)).
+A native Windows GUI application for gifski! Convert video files into high
+quality GIFs!
 
-This project was inspired by [this tweet](https://twitter.com/i/status/1158893237320523776)
-advertising the [gifski GUI for Mac](https://github.com/sindresorhus/Gifski). I
-thought, "hey, I could make a Windows version of that!"
+----
+
+This project makes use of [`ffmpeg`](https://ffmpeg.org/)
+([source](https://github.com/FFmpeg/FFmpeg)) and [`gifski`](https://gif.ski/)
+([source](https://github.com/ImageOptim/gifski)), and was inspired by
+[this tweet](https://twitter.com/i/status/1158893237320523776) advertising the
+[gifski GUI for Mac](https://github.com/sindresorhus/Gifski). I thought, "hey,
+I could make a Windows version of that!"
 
 And so I did!
 
