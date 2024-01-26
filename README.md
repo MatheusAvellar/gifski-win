@@ -1,9 +1,12 @@
 # Gifski Win
 
+> [!WARNING]  
+> This is NOT a finished product. It was an experiment inspired by Sindre Sorhus' Mac Gifski app, at [sindresorhus/Gifski](https://github.com/sindresorhus/Gifski). It probably won't work properly. I might revisit it in the future to squash bugs and polish it off – but I might also not! Sorry :)
+
+---
+
 A native Windows GUI application for gifski! Convert video files into high
 quality GIFs!
-
-----
 
 This project makes use of [`ffmpeg`](https://ffmpeg.org/)
 ([source](https://github.com/FFmpeg/FFmpeg)) and [`gifski`](https://gif.ski/)
